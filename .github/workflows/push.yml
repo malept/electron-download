@@ -1,0 +1,22 @@
+on: push
+name: Build & deploy docs
+jobs:
+  installDependencies:
+    name: Install Dependencies
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Install Dependencies
+      uses: actions/npm@master
+      with:
+        entrypoint: yarn
+        args: install
+    - name: Build Documentation
+      uses: actions/npm@master
+      with:
+        entrypoint: yarn
+        args: build:docs
+    - name: Publish Documentation
+      uses: malept/github-action-gh-pages@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
