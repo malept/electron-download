@@ -17,6 +17,6 @@ jobs:
         entrypoint: yarn
         args: build:docs
     - name: Publish Documentation
-      uses: malept/github-action-gh-pages@master
+      uses: malept/github-action-gh-pages@debug
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
