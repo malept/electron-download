@@ -11,7 +11,6 @@
     "build": "tsc && tsc -p tsconfig.esm.json",
     "build:docs": "typedoc --out docs",
     "prepublishOnly": "npm run build",
-    "publish:docs": "gh-pages-clean && node script/publish-docs.js",
     "test": "prettier --check \"src/**/*.ts\" && jest --coverage"
   },
   "files": [
