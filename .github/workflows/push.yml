@@ -19,6 +19,8 @@ jobs:
     - name: Publish Documentation
       uses: malept/github-action-gh-pages@debug
       env:
+        GIT_COMMIT_EMAIL: electron@github.com
         GIT_COMMIT_FLAGS: --no-verify
+        GIT_COMMIT_USER: Electron Bot
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SHOW_UNDERSCORE_FILES: yes
