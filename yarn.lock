@@ -2352,15 +2352,6 @@ from2@^2.1.0, from2@^2.1.1:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
-fs-extra@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-6.0.1.tgz#8abc128f7946e310135ddc93b98bddb410e7a34b"
-  integrity sha512-GnyIkKhhzXZUWFCaJzvyDLEEgDkPfb4/TPvJCJVuS8MWZgoSsErf++QpiAlDnKFcqhRlm+tIOcencCjyJE6ZCA==
-  dependencies:
-    graceful-fs "^4.1.2"
-    jsonfile "^4.0.0"
-    universalify "^0.1.0"
-
 fs-extra@^7.0.0:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-7.0.1.tgz#4f189c44aa123b895f722804f55ea23eadc348e9"
@@ -6942,13 +6933,6 @@ typedoc-default-themes@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/typedoc-default-themes/-/typedoc-default-themes-0.5.0.tgz#6dc2433e78ed8bea8e887a3acde2f31785bd6227"
   integrity sha1-bcJDPnjti+qOiHo6zeLzF4W9Yic=
-
-typedoc-plugin-nojekyll@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/typedoc-plugin-nojekyll/-/typedoc-plugin-nojekyll-1.0.1.tgz#d6879d4118bbf10efe3feb3b766b69a09c80b3ef"
-  integrity sha512-hdFMhn0vAFCwepihSaVVs5yyImjo2FCX/OVQW89lrrqoARYHlAchOki4BQug23UqFSrYdykUu8yP4gD0M48qbw==
-  dependencies:
-    fs-extra "^6.0.1"
 
 typedoc@^0.14.2:
   version "0.14.2"

@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc && tsc -p tsconfig.esm.json",
-    "build:docs": "typedoc --plugin typedoc-plugin-nojekyll --out docs",
+    "build:docs": "typedoc --out docs",
     "prepublishOnly": "npm run build",
     "publish:docs": "gh-pages-clean && node script/publish-docs.js",
     "test": "prettier --check \"src/**/*.ts\" && jest --coverage"
@@ -43,7 +43,6 @@
     "semantic-release": "^15.13.12",
     "ts-jest": "^24.0.0",
     "typedoc": "^0.14.2",
-    "typedoc-plugin-nojekyll": "^1.0.1",
     "typescript": "^3.4.5"
   },
   "lint-staged": {
