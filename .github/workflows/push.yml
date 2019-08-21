@@ -21,3 +21,4 @@ jobs:
       env:
         GIT_COMMIT_FLAGS: --no-verify
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SHOW_UNDERSCORE_FILES: yes
