@@ -17,9 +17,7 @@ action "Build Documentation" {
 }
 
 action "Publish Documentation" {
-  uses = "actions/npm@master"
+  uses = "malept/github-action-gh-pages@master"
   needs = ["Build Documentation"]
-  runs = "yarn"
-  args = "publish:docs"
   secrets = ["GITHUB_TOKEN"]
 }
