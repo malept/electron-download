@@ -18,9 +18,10 @@ jobs:
         args: build:docs
     - name: Publish Documentation
       uses: malept/github-action-gh-pages@debug
+      with:
+        gitCommitEmail: electron@github.com
+        gitCommitFlags: --no-verify
+        gitCommitUser: Electron Bot
+        showUnderscoreFiles: true
       env:
-        GIT_COMMIT_EMAIL: electron@github.com
-        GIT_COMMIT_FLAGS: --no-verify
-        GIT_COMMIT_USER: Electron Bot
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SHOW_UNDERSCORE_FILES: yes
