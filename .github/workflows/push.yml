@@ -20,9 +20,9 @@ jobs:
       uses: malept/github-action-gh-pages@debug
       with:
         gitCommitEmail: electronjs@lazymalevolence.com
-        gitCommitFlags: --no-verify
+        gitCommitFlags: --no-verify --verbose
         gitCommitUser: Mark Lee
-        gitPushFlags: --no-verify
+        gitPushFlags: --no-verify --verbose
         showUnderscoreFiles: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
