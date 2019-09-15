@@ -19,9 +19,10 @@ jobs:
     - name: Publish Documentation
       uses: malept/github-action-gh-pages@debug
       with:
-        gitCommitEmail: electron@github.com
+        gitCommitEmail: electronjs@lazymalevolence.com
         gitCommitFlags: --no-verify
-        gitCommitUser: Electron Bot
+        gitCommitUser: Mark Lee
+        gitPushFlags: --no-verify
         showUnderscoreFiles: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
