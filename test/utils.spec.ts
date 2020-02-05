@@ -3,6 +3,7 @@ import * as fs from 'fs-extra';
 import {
   normalizeVersion,
   uname,
+  archNameForARM,
   withTempDirectory,
   getHostArch,
   ensureIsTruthyString,
@@ -26,6 +27,16 @@ describe('utils', () => {
         expect(uname()).toEqual('x86_64');
       });
     }
+  });
+
+  describe('archNameForARM()', () => {
+    it('should return the input by default', () => {
+      expect(archNameForARM('something')).toEqual('something');
+    });
+
+    it('should return arm64 when aarch64 is passed in', () => {
+      expect(archNameForARM('aarch64')).toEqual('arm64');
+    });
   });
 
   describe('withTempDirectory()', () => {

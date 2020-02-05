@@ -54,6 +54,14 @@ export function getHostArch() {
   return getNodeArch(process.arch);
 }
 
+export function archNameForARM(machine: string) {
+  if (machine === 'aarch64') {
+    return 'arm64';
+  }
+
+  return machine;
+}
+
 /**
  * Generates an architecture name that would be used in an Electron or Node.js
  * download file name.
@@ -62,7 +70,7 @@ export function getNodeArch(arch: string) {
   if (arch === 'arm') {
     switch ((process.config.variables as any).arm_version) {
       case '6':
-        return uname();
+        return archNameForARM(uname());
       case '7':
       default:
         return 'armv7l';
